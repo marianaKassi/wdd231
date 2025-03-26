@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Business A",
+        "address": "123 Main St",
+        "phone": "(123) 456-7890",
+        "website": "https://business-a.com",
+        "image": "business-a.jpg",
+        "membership": "gold",
+        "description": "Digital Solutions Provider"
+    },
+    {
+        "name": "Business B",
+        "address": "456 Central Ave",
+        "phone": "(234) 567-8901",
+        "website": "https://business-b.com",
+        "image": "business-b.jpg",
+        "membership": "silver",
+        "description": "Financial Services"
+    }
+]
