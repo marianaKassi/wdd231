@@ -1,41 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Yamoussoukro chamber of Commerce">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://[your-domain]/images/hero.jpg">
-    <meta property="og:url" content="https://[your-domain]/directory.html">
-    <title>Member Directory | Yamoussoukro Chamber of Commerce</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="directory.css">
-    <link rel="icon" href="favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Directory of local Chamber of Commerce members. Discover registered businesses and their information.">
+  <meta name="author" content="Your Name">
+  <meta property="og:title" content="Member Directory - Chamber of Commerce">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://your-domain.com/images/logo.png">
+  <meta property="og:url" content="https://your-domain.com/chamber/directory.html">
+  <link rel="icon" href="/Img.ico" type="favicon.ico/favicon.ico">
+  <link rel="stylesheet" href="Styles.css">
+  <link rel="stylesheet" href="directory.css">
+
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230066cc'/><text x='50%' y='60%' font-size='60' text-anchor='middle' fill='white'>CC</text></svg>">
+
+
+  <title>Member Directory - Chamber of Commerce</title>
 </head>
 <body>
-    <header>
-        <!-- Logo and navigation -->
-    </header>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="Img.ico" alt="Chamber of Commerce Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <div class="view-toggle">
-            <button id="grid-view">Grid</button>
-            <button id="list-view">List</button>
-        </div>
-        
-        <div id="member-container" class="grid-view">
-            <!-- JS will populate this -->
-        </div>
-    </main>
+  <!-- Main Content -->
+  <main>
+    <h1>Member Directory</h1>
+    <div class="view-toggle">
+      <button id="grid-view">Grid View</button>
+      <button id="list-view">List View</button>
+    </div>
+    <section id="member-list" class="grid-view">
+     
+        <!-- Members will be dynamically displayed here -->
+    </section>
+  </main>
 
-    <footer>
-        <p>&copy; <span id="current-year"></span> [City] Chamber of Commerce</p>
-        <p>KASSI Ayebié Amoin Ghislaine Mariana | WDD 230</p>
-        <p id="last-modified"></p>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <p> KASSI Ayebié Amoin Ghislaine Mariana | WDD 231 | Copyright &copy; <span id="current-year"></span></p>
+    <p>Last Modified: <span id="last-modified"></span></p>
+  </footer>
 
-    <script src="main.js"></script>
-    <script src="toggle-view.js"></script>
+  <script src="directory.js"></script>
 </body>
 </html>
