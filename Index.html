@@ -1,88 +1,78 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KASSI Ayebié Mariana</title>
+    <meta name="description" content="Portfolio of KASSI Ayebié Amoin Ghislaine Mariana">
+    <meta name="author" content="KASSI Ayebié Amoin Ghislaine Mariana">
+    <title>KASSI Ayebié Amoin Ghislaine Mariana - Portfolio</title>
     <link rel="stylesheet" href="Styles.css">
 </head>
 <body>
-
-    <!-- Header Section -->
+    <!-- Header -->
     <header>
-        <img src="Image.jpg" alt="Profile Picture" class="about-me-img">
-        <h1>KASSI Ayebié Amoin Ghislaine Mariana</h1>
+        <div class="profile">
+            <img src="image.jpg" alt="Profile Picture">
+            <h1>KASSI Ayebié Amoin Ghislaine Mariana</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="directory.html">Chamber</a></li>
+                <li><a href="https://github.com/marianaKassi/wdd231">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/feed/">LinkedIn</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Mobile Menu Button -->
-    <button id="menu-toggle">☰ Menu</button>
-
-    <!-- Navigation Menu -->
-    <nav id="nav-menu">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Chamber</a></li>
-            <li><a href="#">GitHub Profile</a></li>
-            <li><a href="#">LinkedIn</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-
-
+    <!-- Main Content -->
     <main>
-        <section>
-            <h2>Home</h2>
-        </section>
-
-        <!-- Coursework Section -->
-        <section class="card">
+        <section id="course-work">
             <h2>Course Work</h2>
-            <ul>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
-            </ul>
-        </section>
-
-        <!-- Image and Location Section -->
-        <section class="card">
-            <h2>Yamoussoukro, Ivory Coast</h2>
-            <img src="Basilic.YA,Edit.jpg" alt="Baobab Trees" class="location-img">
-            <p><strong>Basilic,Yamoussoukro</strong></p>
-        </section>
-
-        <!-- Web and Computer Programming Certificate -->
-        <section class="certificate">
-            <h3>Web and Computer Programming Certificate</h3>
-            <div class="filters">
-                <button class="filter-btn" data-category="All">All</button>
-                <button class="filter-btn" data-category="CSE">CSE</button>
-                <button class="filter-btn" data-category="WDD">WDD</button>
+            <div class="card">
+                <ul>
+                    <li><a href="https://marianaKassi.github.io/wdd131/filtered-temples.html">How to add elements in HTML with Javascript</a>
+                    <li><a href="https://marianaKassi.github.io/wdd131/form.html">How to create a form</a>
+                    <li><a href="https://marianaKassi.github.io/wdd131/temples.html">Build a responsive</a>
+                </ul>
             </div>
+        </section>
 
-            <table>
-                
-                <tr>
-                    <td class="course-item CSE">CSE 110</td>
-                    <td class="course-item WDD">WDD 130</td>
-                    <td class="course-item CSE">CSE 111</td>
-                </tr>
-                <tr>
-                    <td class="course-item1   CSE">CSE 210</td>
-                    <td class="course-item WDD">WDD 131</td>
-                    <td class="course-item1 WDD">WDD 231</td>
-                </tr>
-            </table>
+        <section id="location">
+            <h2>Basilic, Yamoussoukro</h2>
+            <div class="card">
+                <img src="Basilic.YA,Edit.jpg" alt="Basilic">
+                <p>Basilic,Ivory Coast</p>
+            </div>
+        </section>
+
+        <section id="certificates">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filter-buttons">
+                <button data-filter="all">All</button>
+                <button data-filter="cse">CSE</button>
+                <button data-filter="wdd">WDD</button>
+            </div>
+            <div class="certificate-grid">
+                <div class="certificate cse">CSE 110</div>
+                <div class="certificate wdd">WDD 130</div>
+                <div class="certificate cse">CSE 111</div>
+                <div class="certificate cse">CSE 210</div>
+                <div class="certificate wdd">WDD 131</div>
+                <div class="certificate wdd">WDD 231</div>
+            </div>
         </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <p>©2025 KASSI Ayebié Amoin Ghislaine Mariana, Ivory Coast</p>
-        <p>Last Update: <span id="last-update">01/01/1970 12:00:00</span></p>
+        <p>&copy;2025 ⭐KASSI Ayebié Amoin Ghislaine Mariana Ivory Coast</p>
+        </div>
+    
+
+        </span></p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
