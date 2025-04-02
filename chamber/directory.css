@@ -103,10 +103,9 @@ nav a {
 
 .member-card a {
     display: inline-block;
-    background: #2c3e50;
+    background: #092c50;
     color: white;
     padding: 0.3rem 0.6rem;
     border-radius: 5px;
-    text-decoration: none;
+    text-decoration: non ;
 }
-

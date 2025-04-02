@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     gridViewButton.addEventListener("click", () => {
         gridViewButton.classList.add("active");
         listViewButton.classList.remove("active");
-        displayMembers(JSON.parse(localStorage.getItem("members")), "grid");
+        displayMembers(JSON.parse(localStorage.getItem("members")), " grid ");
     });
 
     listViewButton.addEventListener("click", () => {
@@ -51,6 +51,29 @@ document.addEventListener("DOMContentLoaded", () => {
         listViewButton.classList.add("active");
         displayMembers(JSON.parse(localStorage.getItem("members")), "list");
     });
+
+
+
+
+
+
+
+
+
+
+
+    function showList() {
+        display.classList.add("list-view");
+        display.classList.remove("grid-view");
+    }
+
+
+
+
+
+
+
+
 
     // Ajouter la date et l'heure de dernière modification
     const lastModified = document.getElementById("last-modified");
