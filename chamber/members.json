@@ -1,20 +1,87 @@
 [
     {
-        "name": "ABC Company",
-        "address": "123 Business Ave",
-        "phone": "(123) 456-7890",
-        "website": "https://abc-company.com",
-        "image": "Image.jpg",
-        "membership": 3,
-        "category": "Technology"
+        "name": "Mirk Inc.",
+        "address": "323 Main St, City, Country",
+        "phone": "+123 086 4390",
+        "membershipLevel": "Member",
+        "website": "https://www.goafricaonline.com/ci/70175-cci-ci-chambre-commerce-industrie-yamoussoukro-cote-ivoire",
+        "image": "P7.jpg"
+    },
+
+    {
+        "name": "Jake Brown",
+        "address": "213 Main St, City, Country",
+        "phone": "+123 456 7890",
+        "membershipLevel": "Member",
+        "website": "https://www.goafricaonline.com/ci/70175-cci-ci-chambre-commerce-industrie-yamoussoukro-cote-ivoire",
+        "image": "P6.jpg"
+    },
+
+    {
+        "name": "Henry Shawn.",
+        "address": "231 Main St, City, Country",
+        "phone": "+123 568 0120",
+        "membershipLevel": "Gold",
+        "website": "https://www.goafricaonline.com/ci/70175-cci-ci-chambre-commerce-industrie-yamoussoukro-cote-ivoire",
+        "image": "P8.jpg"
+    },
+
+
+    {
+        "name": "Ben Kwassi.",
+        "address": "234 Main St, City, Country",
+        "phone": "+123 546 7190",
+        "membershipLevel": "Silver",
+        "website": "https://www.goafricaonline.com/ci/70175-cci-ci-chambre-commerce-industrie-yamoussoukro-cote-ivoire",
+        "image": "P9.jpg"
+    },
+
+
+{
+        "name": "Layden Lee.",
+        "address": "343 Main St, City, Country",
+        "phone": "+123 126 4340",
+        "membershipLevel": "Member",
+        "website": "https://www.goafricaonline.com/ci/70175-cci-ci-chambre-commerce-industrie-yamoussoukro-cote-ivoire",
+        "image": "P5.jpg"
+    },
+       { "name": "Harianah Nike",
+        "address": "456 Elm St, City, Country",
+        "phone": "+123 456 7891",
+        "membershipLevel": "Silver",
+        "website": "https://www.goafricaonline.com/ci/70175-cci-ci-chambre-commerce-industrie-yamoussoukro-cote-ivoire",
+        "image": "P11.jpg"
+    },
+
+    { "name": "Niky Flow",
+    "address": "456 Elm St, City, Country",
+    "phone": "+123 456 7891",
+    "membershipLevel": "Gold",
+    "website": "https://www.goafricaonline.com/ci/70175-cci-ci-chambre-commerce-industrie-yamoussoukro-cote-ivoire",
+    "image": "P10.jpg"
+},
+
+{ "name": "Erica Todd",
+"address": "456 Elm St, City, Country",
+"phone": "+123 686 3421",
+"membershipLevel": "Member",
+"website": "https://www.goafricaonline.com/ci/70175-cci-ci-chambre-commerce-industrie-yamoussoukro-cote-ivoire",
+"image": "P12.jpg"
+},
+    {
+        "name": "Jason KASSI",
+        "address": "789 Oak St, City, Country",
+        "phone": "+123 967 4562",
+        "membershipLevel": "Gold",
+        "website": "https://www.goafricaonline.com/ci/70175-cci-ci-chambre-commerce-industrie-yamoussoukro-cote-ivoire",
+        "image": "P3.jpg"
     },
     {
-        "name": "Main Street Bakery",
-        "address": "456 Commerce St",
-        "phone": "(234) 567-8901",
-        "website": "https://mainstreetbakery.com",
-        "image": "bakery.jpg",
-        "membership": 2,
-        "category": "Food"
+        "name": "Bene Natthw",
+        "address": "101 Pine St, City, Country",
+        "phone": "+123 178 3461",
+        "membershipLevel": "Member",
+        "website": "https://www.goafricaonline.com/ci/70175-cci-ci-chambre-commerce-industrie-yamoussoukro-cote-ivoire",
+        "image": "P4.jpg"
     }
 ]

@@ -1,39 +1,62 @@
-// Display the current year and last modified date
-document.getElementById('current-year').textContent = new Date().getFullYear();
-document.getElementById('last-modified').textContent = document.lastModified;
+document.addEventListener("DOMContentLoaded", () => {
+    const membersContainer = document.getElementById("members-container");
+    const gridViewButton = document.getElementById("grid-view");
+    const listViewButton = document.getElementById("list-view");
 
-// Load and display members
-async function loadMembers() {
-  const response = await fetch('data/members.json');
-  const members = await response.json();
+    // Charger les données JSON
+    async function fetchMembers() {
+        try {
+            const response = await fetch("members.json");
+            const members = await response.json();
+            displayMembers(members, "grid"); // Afficher en grille par défaut
+        } catch (error) {
+            console.error("Error loading members:", error);
+        }
+    }
 
-  const memberList = document.getElementById('member-list');
-  memberList.innerHTML = ''; // Clear previous content
+    // Afficher les membres
+    function displayMembers(members, view) {
+        membersContainer.innerHTML = "";
+        members.forEach(member => {
+            const card = document.createElement("div");
+            card.classList.add("member-card");
+            card.innerHTML = `
+                <img src="${member.image}" alt="${member.name}">
+                <h3>${member.name}</h3>
+                <p>${member.address}</p>
+                <p>${member.phone}</p>
+                <p>Membership Level: ${member.membershipLevel}</p>
+                <a href="${member.website}" target="_blank">Visit Website</a>
+            `;
+            membersContainer.appendChild(card);
+        });
 
-  members.forEach(member => {
-    const card = document.createElement('div');
-    card.className = 'member-card';
-    card.innerHTML = `
-      <img src="${member.image}" alt="Logo of ${member.name}">
-      <h3>${member.name}</h3>
-      <p>${member.address}</p>
-      <p>Tel: ${member.phone}</p>
-      <a href="${member.website}" target="_blank">Visit Website</a>
-    `;
-    memberList.appendChild(card);
-  });
-}
+        if (view === "list") {
+            membersContainer.style.display = "flex";
+            membersContainer.style.flexDirection = "column";
+        } else {
+            membersContainer.style.display = "grid";
+        }
+    }
 
-// Toggle between grid and list views
-document.getElementById('grid-view').addEventListener('click', () => {
-  document.getElementById('member-list').classList.remove('list-view');
-  document.getElementById('member-list').classList.add('grid-view');
+    // Basculer entre vue grille et vue liste
+    gridViewButton.addEventListener("click", () => {
+        gridViewButton.classList.add("active");
+        listViewButton.classList.remove("active");
+        displayMembers(JSON.parse(localStorage.getItem("members")), "grid");
+    });
+
+    listViewButton.addEventListener("click", () => {
+        gridViewButton.classList.remove("active");
+        listViewButton.classList.add("active");
+        displayMembers(JSON.parse(localStorage.getItem("members")), "list");
+    });
+
+    // Ajouter la date et l'heure de dernière modification
+    const lastModified = document.getElementById("last-modified");
+    const formattedDate = new Date(document.lastModified).toLocaleString();
+    lastModified.textContent = formattedDate;
+
+    // Stocker les membres dans localStorage
+    fetchMembers().then(members => localStorage.setItem("members", JSON.stringify(members)));
 });
-
-document.getElementById('list-view').addEventListener('click', () => {
-  document.getElementById('member-list').classList.remove('grid-view');
-  document.getElementById('member-list').classList.add('list-view');
-});
-
-// Initialize the page
-loadMembers();
