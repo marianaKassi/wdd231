@@ -31,49 +31,19 @@ document.addEventListener("DOMContentLoaded", () => {
             membersContainer.appendChild(card);
         });
 
-        if (view === "list") {
-            membersContainer.style.display = "flex";
-            membersContainer.style.flexDirection = "column";
-        } else {
-            membersContainer.style.display = "grid";
-        }
+        
     }
 
     // Basculer entre vue grille et vue liste
     gridViewButton.addEventListener("click", () => {
         gridViewButton.classList.add("active");
         listViewButton.classList.remove("active");
-        displayMembers(JSON.parse(localStorage.getItem("members")), " grid ");
     });
 
     listViewButton.addEventListener("click", () => {
         gridViewButton.classList.remove("active");
         listViewButton.classList.add("active");
-        displayMembers(JSON.parse(localStorage.getItem("members")), "list");
     });
-
-
-
-
-
-
-
-
-
-
-
-    function showList() {
-        display.classList.add("list-view");
-        display.classList.remove("grid-view");
-    }
-
-
-
-
-
-
-
-
 
     // Ajouter la date et l'heure de dernière modification
     const lastModified = document.getElementById("last-modified");
@@ -83,3 +53,12 @@ document.addEventListener("DOMContentLoaded", () => {
     // Stocker les membres dans localStorage
     fetchMembers().then(members => localStorage.setItem("members", JSON.stringify(members)));
 });
+
+
+
+
+
+
+
+
+

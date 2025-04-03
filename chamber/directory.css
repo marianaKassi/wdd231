@@ -1,15 +1,17 @@
 
+ 
  /* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #c7c7bf;
+
 }
 
 header {
     background: #092c50;
-    color: white;
+    color: wheat;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,7 +21,7 @@ header {
 
 footer {
     background: #092c50;
-    color: white;
+    color: wheat;
     text-align: center;
     padding: 1rem;
     position: relative;
@@ -42,7 +44,7 @@ nav ul {
 }
 
 nav a {
-    color: white;
+    color: wheat;
     text-decoration: none;
     font-weight: bold;
 }
@@ -103,9 +105,10 @@ nav a {
 
 .member-card a {
     display: inline-block;
-    background: #092c50;
+    background: #2c3e50;
     color: white;
     padding: 0.3rem 0.6rem;
     border-radius: 5px;
-    text-decoration: non ;
+    text-decoration: none;
 }
+
