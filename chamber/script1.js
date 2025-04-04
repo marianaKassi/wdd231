@@ -20,7 +20,7 @@ async function displayMembers(view = 'grid') {
         if (view === 'list') card.classList.add('list-view');
 
         card.innerHTML = `
-            <img src="Images/${member.image}" alt="${member.name}">
+            <img src="images/${member.image}" alt="${member.name}">
             <h3>${member.name}</h3>
             <p>${member.address}</p>
             <p>${member.phone}</p>
