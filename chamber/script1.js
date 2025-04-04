@@ -48,20 +48,6 @@ document.getElementById('list-view').addEventListener('click', () => {
 displayMembers();
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     // Ajouter la date et l'heure de dernière modification
     const lastModified = document.getElementById("last-modified");
     const formattedDate = new Date(document.lastModified).toLocaleString();
