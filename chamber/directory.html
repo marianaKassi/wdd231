@@ -6,7 +6,7 @@
     <link rel="icon" href="image.ico" type="image/x-icon">
 
    <title>Chamber of Commerce-Directory</title> 
-    <link rel="stylesheet" href="directory.css">
+    <link rel="stylesheet" href="Styles/directory.css">
 </head>
 <body>
     <!-- Header -->
@@ -26,20 +26,25 @@
     </header>
 
     <!-- Main Content -->
-    <main>
-        <h1>Chamber of Commerce Directory</h1>
+    
 
-        <!-- View Toggle -->
+
+    <main>
+        <h1>Chamber of Commerce Directory</h1> <!-- Moved <h1> here -->
         <div class="view-toggle">
-            <button id="grid-view">Grid View</button>
-            <button id="list-view">List View</button>
+            <button id="grid-view"><i class="ri-layout-grid-2-fill"></i>Grid View</button>
+            <button id="list-view"><i class="ri-list-check"></i>List View</button>
         </div>
 
-        <!-- Members Container -->
-        <div id="members-container"></div>
-
-
+        <div id="directory">
+            <!-- Member cards will be dynamically inserted here -->
+        </div>
     </main>
+
+
+
+
+
 
     <!-- Footer -->
     <footer>
