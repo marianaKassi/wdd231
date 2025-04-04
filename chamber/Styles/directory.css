@@ -73,16 +73,8 @@
 }
 
 .list-view:nth-child(even) {
-    background-color: #bed;
+    background-color: #092c50;
 }
-
-
-
-
-
-
-
-
 
 body {
     font-family: Arial, sans-serif;

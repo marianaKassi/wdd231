@@ -24,7 +24,7 @@ async function displayMembers(view = 'grid') {
             <h3>${member.name}</h3>
             <p>${member.address}</p>
             <p>${member.phone}</p>
-            <p>Membership Level: ${member.membership}</p>
+            <p>Membership Level: ${member.membershipLevel}</p>
             <p><a href="${member.website}" target="_blank">Visit Website</a></p>`;
 
         directory.appendChild(card);
