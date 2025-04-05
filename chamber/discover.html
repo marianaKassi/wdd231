@@ -3,53 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Our Region</title>
+    <link rel="stylesheet" href="css/discover.css">
     <link rel="icon" href="image.ico" type="image/x-icon">
-   <title>Chamber of Commerce-Directory</title> 
-    <link rel="stylesheet" href="css/directory.css">
+    <link rel="stylesheet" href="css/directory.css" media="(min-width: 641px)">
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="logo">
         <p> <img src="images/chamber.jpg" alt="Chamber Logo">Chamber of Commerce</p>
-            <h1>Chamber of Commerce-Directory</h1>
+            <h1>Chamber of Commerce</h1>
         </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-
+                <li><a href="discover.html" class="active">Discover</a></li>
             </ul>
-            <button class="join-btn">Join</button>
         </nav>
     </header>
 
     <!-- Main Content -->
-
-
     <main>
-        <h1>Chamber of Commerce </h1> <!-- Moved <h1> here -->
-        <div class="view-toggle">
-            <button id="grid-view"><i class="ri-layout-grid-2-fill"></i>Grid View</button>
-            <button id="list-view"><i class="ri-list-check"></i>List View</button>
-        </div>
-
-        <div id="directory">
-            <!-- Member cards will be dynamically inserted here -->
-        </div>
+        <section id="visitor-message"></section>
+        <section id="gallery" class="grid-container">
+            <!-- Cards will be dynamically inserted here -->
+        </section>
     </main>
-
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2023 Chamber of Commerce. All rights reserved
             <p> wdd231/ ⭐KASSI A Amoin Ghislaine Mariana</p>
-        <p>last-Modified: <span id="last-modified"></span></p>
+        <p>Last Modified: <span id="last-modified"></span></p>
     </footer>
 
-    
-    <script src="js/script1.js"></script>
+
+    <script src="js/discover.js"></script>
 </body>
 </html>
