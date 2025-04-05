@@ -1,50 +1,50 @@
 [
     {
         "name": "Local Park",
-        "address": "123 Green St, City, Country",
+        "address": "233 Green St, Yamoussoukro, Ivory Coast",
         "description": "A beautiful park with walking trails and picnic areas.",
-        "image": "images/item1.webp"
+        "image": "images/park.jpg"
     },
     {
         "name": "Historic Museum",
-        "address": "456 History Ln, City, Country",
+        "address": "456 History Agni, Yamoussoukro, Ivory Coast",
         "description": "Explore the rich history of our region.",
-        "image": "images/item2.webp"
+        "image": "images/musee.jpeg"
     },
     {
         "name": "Art Gallery",
-        "address": "789 Art Ave, City, Country",
+        "address": "769 Art For All,Yamoussoukro , Ivory Coast",
         "description": "Discover local and international art exhibits.",
-        "image": "images/item3.webp"
+        "image": "images/artGalery.jpeg"
     },
     {
         "name": "Cultural Center",
-        "address": "101 Culture Rd, City, Country",
+        "address": "101 Culture Rd,Yamoussoukro ,Ivory Coast ",
         "description": "A hub for cultural events and workshops.",
-        "image": "images/item4.webp"
+        "image": "images/cC.jpeg"
     },
     {
         "name": "Nature Reserve",
-        "address": "202 Nature Dr, City, Country",
+        "address": "45 Boli-kro, Yamoussoukro,Ivory Coast ",
         "description": "A protected area for wildlife observation.",
-        "image": "images/item5.webp"
+        "image": "images/ab.jpeg"
     },
     {
         "name": "Local Market",
-        "address": "303 Market Pl, City, Country",
+        "address": "109 Market of peace, Yamoussoukro,Ivory Coast ",
         "description": "Fresh produce and handmade crafts every weekend.",
-        "image": "images/item6.webp"
+        "image": "images/market local.jpg"
     },
     {
         "name": "Sports Arena",
-        "address": "404 Sports Blvd, City, Country",
+        "address": "278 Sports Blvd-Inp,Yamoussoukro, Ivory Coast",
         "description": "Hosts various sports events and concerts.",
-        "image": "images/item7.webp"
+        "image": "images/sp.jpg"
     },
     {
         "name": "Library",
-        "address": "505 Book Ln, City, Country",
+        "address": "25 Book Free, Yamoussoukro,Ivory Coast",
         "description": "A quiet place for reading and research.",
-        "image": "images/item8.webp"
+        "image": "images/librairie.jpeg"
     }
 ]
