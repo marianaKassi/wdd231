@@ -1,0 +1,69 @@
+[
+    {
+        "id": 1,
+        "title": "Sunset Dreams",
+        "artist": "Amina Diarra",
+        "category": "Painting",
+        "description": "A vibrant painting capturing the beauty of a sunset over Abidjan.",
+        "image": "assets/images/artwork2.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Urban Rhythms",
+        "artist": "Kofi Mensah",
+        "category": "Sculpture",
+        "description": "A modern sculpture inspired by the energy of city life.",
+        "image": "assets/images/artwork2.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Nature's Whisper",
+        "artist": "Fatou Sow",
+        "category": "Photography",
+        "description": "A breathtaking photo of nature in its purest form.",
+        "image": "assets/images/artwork3.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Cultural Roots",
+        "artist": "Yao Kouassi",
+        "category": "Mixed Media",
+        "description": "An exploration of cultural heritage through mixed media.",
+        "image": "assets/images/artwork4.jpg"
+    } ,
+    {
+        "id": 5,
+        "title": "Golden Harvest",
+        "artist": "Mariam Koné",
+        "category": "Painting",
+        "description": "A depiction of farmers celebrating the harvest season in rural Ivory Coast.",
+        "image": "assets/images/artwork5.jpg"
+    },
+    {
+        "id": 6,
+        "title": "The Mask Dancer",
+        "artist": "Issa Diallo",
+        "category": "Sculpture",
+        "description": "A wooden sculpture representing traditional Ivorian mask dances.",
+        "image": "assets/images/artwork6.jpg"
+    },
+
+
+    {
+        "id": 7,
+        "title": "Reflections of Hope",
+        "artist": "Adama Traoré",
+        "category": "Photography",
+        "description": "A black-and-white photo capturing resilience and hope in urban communities.",
+        "image": "assets/images/artwork7.jpg"
+    },
+    {
+        "id": 8,
+        "title": "Modern Traditions",
+        "artist": "Grace Bamba",
+        "category": "Mixed Media",
+        "description": "A fusion of traditional patterns with contemporary art techniques.",
+        "image": "assets/images/artwork8.jpg"
+    }
+
+]

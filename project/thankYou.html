@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="css/join.css">
+    <link rel="icon" href="image.ico" type="image/x-icon">
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="images/chamber.jpg" alt="Chamber Logo">Chamber of Commerce
+            <h1>Chamber of Commerce</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h2>Thank You for Your Application!</h2>
+        <p>Here are the details you submitted:</p>
+        <ul id="submitted-data">
+            <!-- Data will be dynamically inserted here -->
+        </ul>
+    </main>
+
+ <!-- Footer -->
+ <footer>
+    <p>&copy; 2025 ArtVision Ivory Coast | <a href="attributions.html">Attributions</a></p>
+</footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const params = new URLSearchParams(window.location.search);
+            const dataContainer = document.getElementById("submitted-data");
+
+            params.forEach((value, key) => {
+                const li = document.createElement("li");
+                li.textContent = `${key.replace(/([A-Z])/g, ' $1').toUpperCase()}: ${value}`;
+                dataContainer.appendChild(li);
+            });
+        });
+    </script>
+</body>
+</html>

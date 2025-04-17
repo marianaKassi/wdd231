@@ -1,0 +1,62 @@
+[
+    {
+        "title": "Colors of Abidjan",
+        "date": "November 15, 2023",
+        "location": "National Museum of Ivory Coast, Abidjan",
+        "description": "A vibrant exhibition showcasing the works of local artists inspired by the city's culture and landscapes.",
+        "link": "https://example.com/colors-of-abidjan"
+    },
+    {
+        "title": "Heritage in Motion",
+        "date": "December 1, 2023",
+        "location": "Cultural Center of Yamoussoukro",
+        "description": "An interactive art installation exploring the traditions and evolution of Ivorian dance and music.",
+        "link": "https://example.com/heritage-in-motion"
+    },
+
+
+    {  
+        "title" : "Abidjan International Art Festival",
+        "date" : "January 10 and 15, 2024",
+        "Location" : "Various venues across Abidjan",
+        "description" : "A week-long celebration of contemporary African art, featuring exhibitions, performances, and panel discussions with international artists." ,
+         "Link" : "Festival Details"
+    }, 
+
+
+
+    {
+        "title" : "Submit Your Artwork for the 2024 Exhibition",
+         "date" : "December 20, 2023",
+         "location" : "Bingerville Youth Center" ,
+        "description" : "Artists are invited to submit their work for consideration in the upcoming 2024 Contemporary Art.A call for photographers to contribute to a special series on urban life in Ivory Coast, to be featured in an international publication."
+       
+    },
+
+
+    {
+        "title" : "Global Art Exchange Program" ,
+        "date" : "January 2024" ,
+        "location ": "Virtual" ,
+        "description" : "An initiative connecting Ivorian artists with international peers to exchange ideas and collaborate on joint projects.",
+       "link": "Learn More"
+    } ,
+
+    {
+
+        "title" : "Côte d'Ivoire Sculpture Expo" ,
+   "date ": "February 3,4,5 And 7, 2024" ,
+  "location" : "Sassandra Art Gallery",
+ "description" : "An exclusive exhibition highlighting the beauty and craftsmanship of Ivorian sculptures." ,
+  "link" : "Explore More"
+
+    },
+
+    {
+        "title" : "Live Painting Session with Amina Diarra",
+"date " : "November 22, 2023" ,
+"location" : "Instagram Live (@artvisionivorycoast)",
+"description" : "Join Amina Diarra as she creates a new painting live and shares her creative process." ,
+"link" : "Follow on Instagram"
+    }
+]

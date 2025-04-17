@@ -1,0 +1,61 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #0a3a99;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #007BFF;
+    color: rgb(255, 255, 255);
+
+}
+
+.hero {
+    text-align: center;
+    padding: 2rem;
+    background: url('../assets/images/hero-bg.jpg') no-repeat center center/cover;
+    color: rgb(23, 66, 152);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #007BFF;
+    color: rgb(9, 46, 125);
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 1;
+    width: 100%;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+button {
+    color: rgb(6, 55, 120);
+    background-color: rgb(186, 98, 98);
+}
