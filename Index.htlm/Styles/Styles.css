@@ -50,23 +50,6 @@ header {
     color: white;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
 
 /* Main Content */
 main {
@@ -225,3 +208,17 @@ footer p {
         justify-content: center;
     }
 }
+
+
+nav ul  {
+        list-style: none;
+        display:  flex;
+}
+    
+ nav a { color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+ 
