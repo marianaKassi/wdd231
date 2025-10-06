@@ -3,21 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Mariana ⭐KASSI">
-    <meta property="og:title" content="Chamber of Commerce - Homepage">
+    <meta name="description" content="Discover our Chamber of Commerce - Explore local businesses, community events, and economic opportunities in our vibrant community.">
+    <meta name="author" content="Mariana Kassi">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Chamber of Commerce - Discover Our Community">
+    <meta property="og:description" content="Explore the Chamber of Commerce community. Discover local businesses, upcoming events, economic opportunities, and learn about our vibrant business network.">
+    <meta property="og:image" content="https://marianakassi.github.io/wdd231/chamber/images/chamber.jpg">
+    <meta property="og:url" content="https://marianakassi.github.io/wdd231/chamber/discover.html">
     <meta property="og:type" content="website">
-    <title>Chamber of Commerce - Discover</title>
+
+    <title>Chamber of Commerce - Discover Our Community & Local Businesses</title>
+    <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/discover.css">
-    <link rel="icon" href="images/image.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/directory.css" media="(min-width: 641px)">
 </head>
 <body>
-    <main>
-    <!-- Header -->
     <header>
         <div class="logo">
-        <p> <img src="images/chamber.jpg" alt="Chamber Logo">Chamber of Commerce</p>
-            <h1>Chamber of Commerce</h1>
+            <img src="images/chamber.jpg" alt="Chamber of Commerce Logo">
+            <span>Chamber of Commerce</span>
         </div>
         <nav>
             <ul>
@@ -29,20 +34,26 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
+    <main>
+        <h1>Discover Our Chamber of Commerce Community</h1>
+
         <section id="visitor-message"></section>
+        
         <section id="gallery" class="grid-container">
-            <!-- Cards will be dynamically inserted here -->
+            <!-- 6 images with lazy loading will be dynamically inserted here -->
+            <!-- Example structure for each image: -->
+            <!-- <figure>
+                <img src="images/photo1.jpg" alt="Description" loading="lazy">
+                <figcaption>Image description</figcaption>
+            </figure> -->
         </section>
     </main>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Chamber of Commerce. All rights reserved
-            <p> wdd231|⭐KASSI A Amoin Ghislaine Mariana</p>
+        <p>&copy; 2025 Chamber of Commerce. All rights reserved</p>
+        <p>WDD231 - Mariana Kassi</p>
         <p>Last Modified: <span id="last-modified"></span></p>
     </footer>
-
 
     <script src="scripts/discover.js"></script>
 </body>
