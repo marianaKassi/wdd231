@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-    <meta charset="UTF-8">    <meta property="og:type" content="website">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join our Chamber of Commerce - Discover membership benefits, different membership levels, and submit your application online for business growth opportunities.">
+    <meta name="author" content="Mariana Kassi">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Join the Chamber of Commerce - Membership Application & Benefits">
+    <meta property="og:description" content="Become a member of our Chamber of Commerce. Choose from different membership levels and enjoy exclusive benefits for your business growth and networking.">
+    <meta property="og:image" content="https://marianakassi.github.io/wdd231/chamber/images/chamber.jpg">
+    <meta property="og:url" content="https://marianakassi.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
 
-
-    <meta name="author" content="Mariana ⭐KASSI">
-
-    <title>Join the Chamber of Commerce</title>
-    <link rel="stylesheet" href="css/join.css">
-    <link rel="icon" href="image.ico" type="image/x-icon.website">
-    <meta property="og:url" content="https://MarianaKassi.github.io/wdd231/chamber/.html">
-
+    <title>Join the Chamber of Commerce - Membership Application & Benefits</title>
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <main>
-
-    <!-- Header -->
     <header>
         <div class="logo">
-            <p> <img src="images/chamber.jpg" alt="Chamber Logo">Chamber of Commerce</p>
-             <h1>Join Chamber of Commerce</h1>
+            <img src="images/chamber.jpg" alt="Chamber of Commerce Logo">
+            <span>Chamber of Commerce</span>
         </div>
         <nav>
             <ul>
@@ -31,69 +33,72 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
-        <h2>Membership Application Form</h2>
+    <main>
+        <h1>Join the Chamber of Commerce - Membership Application</h1>
 
         <!-- Membership Form -->
-        <form id="membership-form" action="thankyou.html" method="get">
-            <label for="first-name">First Name:</label>
-            <input type="text" id="first-name" name="firstName" required autocomplete="given-name" placeholder="John">
+        <section class="form-section">
+            <h2>Membership Application Form</h2>
+            <form id="membership-form" action="thankyou.html" method="get">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="firstName" required autocomplete="given-name" placeholder="John">
 
-            <label for="last-name">Last Name:</label>
-            <input type="text" id="last-name" name="lastName" required autocomplete="family-name" placeholder="Doe">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="lastName" required autocomplete="family-name" placeholder="Doe">
 
-            <label for="title">Title (e.g., CEO):</label>
-            <input type="text" id="title" name="title" pattern="[A-Za-z\s\-]{7,}" title="Minimum 7 characters, alphabetic, hyphens, and spaces only" required autocomplete="organization-title" placeholder="Chief Executive Officer">
+                <label for="title">Title (e.g., CEO):</label>
+                <input type="text" id="title" name="title" pattern="[A-Za-z\s\-]{7,}" title="Minimum 7 characters, alphabetic, hyphens, and spaces only" required autocomplete="organization-title" placeholder="Chief Executive Officer">
 
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required autocomplete="email" placeholder="example@example.com">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required autocomplete="email" placeholder="example@example.com">
 
-            <label for="phone">Mobile Phone:</label>
-            <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="+1234567890">
+                <label for="phone">Mobile Phone:</label>
+                <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="+1234567890">
 
-            <label for="organization">Organization Name:</label>
-            <input type="text" id="organization" name="organization" required autocomplete="organization" placeholder="Your Company Name">
+                <label for="organization">Organization Name:</label>
+                <input type="text" id="organization" name="organization" required autocomplete="organization" placeholder="Your Company Name">
 
-            <label for="description">Organization Description:</label>
-            <textarea id="description" name="description" rows="4" placeholder="Tell us about your organization..."></textarea>
+                <label for="description">Organization Description:</label>
+                <textarea id="description" name="description" rows="4" placeholder="Tell us about your organization..."></textarea>
 
-            <label for="membership-level">Membership Level:</label>
-            <select id="membership-level" name="membershipLevel" required>
-                <option value="">Select a level</option>
-                <option value="Non-Profit">Non-Profit (Free)</option>
-                <option value="Bronze">Bronze</option>
-                <option value="Silver">Silver</option>
-                <option value="Gold">Gold</option>
-            </select>
+                <label for="membership-level">Membership Level:</label>
+                <select id="membership-level" name="membershipLevel" required>
+                    <option value="">Select a level</option>
+                    <option value="Non-Profit">Non-Profit (Free)</option>
+                    <option value="Bronze">Bronze</option>
+                    <option value="Silver">Silver</option>
+                    <option value="Gold">Gold</option>
+                </select>
 
-            <!-- Hidden Timestamp Field -->
-            <input type="hidden" id="timestamp" name="timestamp" value="">
+                <!-- Hidden Timestamp Field -->
+                <input type="hidden" id="timestamp" name="timestamp" value="">
 
-            <!-- Submit Button -->
-            <button type="submit">Submit Application</button>
-        </form>
+                <!-- Submit Button -->
+                <button type="submit">Submit Application</button>
+            </form>
+        </section>
 
         <!-- Membership Cards -->
         <section class="membership-cards">
-            <h3>Membership Levels</h3>
+            <h2>Membership Levels</h2>
             <div class="cards-container">
                 <div class="card" data-modal="non-profit-modal">
-                    <h4>Non-Profit</h4>
+                    <h3>Non-Profit</h3>
                     <p>Free membership for non-profit organizations.</p>
                     <a href="#" class="info-link">Learn More</a>
                 </div>
                 <div class="card" data-modal="bronze-modal">
-                    <h4>Bronze</h4>
+                    <h3>Bronze</h3>
                     <p>Basic benefits for small businesses.</p>
                     <a href="#" class="info-link">Learn More</a>
                 </div>
                 <div class="card" data-modal="silver-modal">
-                    <h4>Silver</h4>
+                    <h3>Silver</h3>
                     <p>Enhanced benefits for growing businesses.</p>
                     <a href="#" class="info-link">Learn More</a>
                 </div>
                 <div class="card" data-modal="gold-modal">
-                    <h4>Gold</h4>
+                    <h3>Gold</h3>
                     <p>Premium benefits for established businesses.</p>
                     <a href="#" class="info-link">Learn More</a>
                 </div>
@@ -133,12 +138,11 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2023 Chamber of Commerce. All rights reserved
-            <p> wdd231/ ⭐KASSI A Amoin Ghislaine Mariana</p>
+        <p>&copy; 2025 Chamber of Commerce. All rights reserved</p>
+        <p>WDD231 - Mariana Kassi</p>
         <p>Last Modified: <span id="last-modified"></span></p>
     </footer>
 
-
-    <script src="js/join.js"></script>
+    <script src="scripts/join.js"></script>
 </body>
 </html>
