@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the rich cultural diversity of Ivory Coast's ethnic groups, traditions, and heritage">
+    <meta name="author" content="Ethnic Diversity Project">
+    <meta property="og:title" content="Cultures of Ivory Coast - Ethnic Diversity">
+    <meta property="og:description" content="Discover the vibrant cultural heritage of Ivory Coast's ethnic communities">
+    <meta property="og:type" content="website">
+    <title>Cultures of Ivory Coast - Home</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="images/E2i.ico" type="image/x-icon">
+
+
+    </head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>🌍 Cultures of Ivory Coast</h1>
+                <button class="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="cultures.html" class="nav-link">Cultural Heritage</a></li>
+                <li class="nav-item"><a href="unity.html" class="nav-link">Unity & Diversity</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Discover Ivory Coast's Cultural Tapestry</h2>
+                <p>Exploring the rich diversity of ethnic groups and traditions that make our nation unique</p>
+                <button class="cta-button" id="exploreBtn">Explore Cultures</button>
+            </div>
+        </section>
+
+        <section class="quick-facts">
+            <div class="container">
+                <h2>Ivory Coast at a Glance</h2>
+                <div class="facts-grid">
+                    <div class="fact-card">
+                        <h3>60+</h3>
+                        <p>Ethnic Groups</p>
+                    </div>
+                    <div class="fact-card">
+                        <h3>4</h3>
+                        <p>Major Language Families</p>
+                    </div>
+                    <div class="fact-card">
+                        <h3>Rich</h3>
+                        <p>Cultural Heritage</p>
+                    </div>
+                    <div class="fact-card">
+                        <h3>Unity</h3>
+                        <p>in Diversity</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-groups">
+            <div class="container">
+                <h2>Featured Ethnic Groups</h2>
+                <div class="groups-grid" id="featuredGroups">
+                    <!-- Dynamically populated from JSON -->
+                </div>
+            </div>
+        </section>
+
+        <section class="cultural-map">
+            <div class="container">
+                <h2>Cultural Regions of Ivory Coast</h2>
+                <div class="map-container">
+                    <div class="map-regions" id="culturalMap">
+                        <div class="region" data-region="north">
+                            <div class="region-tooltip">Northern Region<br>Mandé & Gur Peoples</div>
+                        </div>
+                        <div class="region" data-region="central">
+                            <div class="region-tooltip">Central Region<br>Baoulé & Other Akan</div>
+                        </div>
+                        <div class="region" data-region="west">
+                            <div class="region-tooltip">Western Region<br>Kru Peoples</div>
+                        </div>
+                        <div class="region" data-region="east">
+                            <div class="region-tooltip">Eastern Region<br>Akan Groups</div>
+                        </div>
+                        <div class="region" data-region="south">
+                            <div class="region-tooltip">Southern Region<br>Coastal Communities</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form" id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Interested in learning more about Ivorian cultures? Send us a message!</p>
+                <form id="culturalForm" action="form-action.html" method="get">
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="interest">Cultural Interest:</label>
+                        <select id="interest" name="interest">
+                            <option value="">Select an interest</option>
+                            <option value="akan">Akan Traditions</option>
+                            <option value="mandé">Mandé Culture</option>
+                            <option value="gur">Gur Heritage</option>
+                            <option value="krou">Kru Customs</option>
+                            <option value="all">General Information</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell us about your cultural interests..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Cultures of Ivory Coast. Celebrating Cultural Diversity.</p>
+                <div class="footer-links">
+                    <a href="attributions.html">Resource Attributions</a>
+                    <a href="https://www.youtube.com/shorts/Au9y_sdzt-0" target="_blank">Project Video Demonstration</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Modal Structure -->
+    <div id="culturalModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

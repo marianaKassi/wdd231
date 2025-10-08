@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the rich cultural heritage of Ivory Coast's ethnic groups including Akan, Mandé, Gur, and Kru peoples">
+    <meta name="author" content="Ethnic Diversity Project">
+    <title>Cultural Heritage - Cultures of Ivory Coast</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="images/E2i.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>🌍 Cultures of Ivory Coast</h1>
+                <button class="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="cultures.html" class="nav-link active">Cultural Heritage</a></li>
+                <li class="nav-item"><a href="unity.html" class="nav-link">Unity & Diversity</a></li>
+                <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Cultural Heritage</h1>
+                <p>Discover the rich traditions, arts, and customs of Ivory Coast's diverse ethnic groups</p>
+            </div>
+        </section>
+
+        <section class="culture-filters">
+            <div class="container">
+                <div class="filter-controls">
+                    <label for="regionFilter">Filter by Region:</label>
+                    <select id="regionFilter">
+                        <option value="all">All Regions</option>
+                        <option value="north">Northern</option>
+                        <option value="central">Central</option>
+                        <option value="west">Western</option>
+                        <option value="east">Eastern</option>
+                        <option value="south">Southern</option>
+                    </select>
+                    
+                    <label for="familyFilter">Filter by Language Family:</label>
+                    <select id="familyFilter">
+                        <option value="all">All Families</option>
+                        <option value="akan">Akan</option>
+                        <option value="mandé">Mandé</option>
+                        <option value="gur">Gur</option>
+                        <option value="kru">Kru</option>
+                    </select>
+
+                    <button id="resetFilters" class="filter-btn">Reset Filters</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="all-cultures">
+            <div class="container">
+                <h2>Explore All Ethnic Groups</h2>
+                <div class="cultures-grid" id="culturesGrid">
+                    <!-- Dynamically populated from JSON -->
+                </div>
+            </div>
+        </section>
+
+        <section class="cultural-traditions">
+            <div class="container">
+                <h2>Cultural Traditions & Practices</h2>
+                <div class="traditions-container">
+                    <div class="tradition-category">
+                        <h3>🎭 Traditional Festivals</h3>
+                        <div class="tradition-list" id="festivalsList">
+                            <!-- Dynamically populated -->
+                        </div>
+                    </div>
+                    <div class="tradition-category">
+                        <h3>🎨 Arts & Crafts</h3>
+                        <div class="tradition-list" id="artsList">
+                            <!-- Dynamically populated -->
+                        </div>
+                    </div>
+                    <div class="tradition-category">
+                        <h3>🍛 Culinary Traditions</h3>
+                        <div class="tradition-list" id="cuisineList">
+                            <!-- Dynamically populated -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+     <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Cultures of Ivory Coast. Celebrating Cultural Diversity.</p>
+                <div class="footer-links">
+                    <a href="attributions.html">Resource Attributions</a>
+                    <a href="https://www.youtube.com/shorts/Au9y_sdzt-0" target="_blank">Project Video Demonstration</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="culturalModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script type="module" src="scripts/cultures.js"></script>
+</body>
+</html>

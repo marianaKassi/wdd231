@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission Confirmation</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="images/E2i.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>🌍 Cultures of Ivory Coast</h1>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="confirmation-section">
+            <div class="container">
+                <div class="confirmation-card">
+                    <h1>✅ Thank You for Your Interest!</h1>
+                    <div id="formDataDisplay">
+                        <!-- Form data will be displayed here -->
+                    </div>
+                    <div class="confirmation-actions">
+                        <a href="index.html" class="btn-primary">Return to Homepage</a>
+                        <a href="cultures.html" class="btn-secondary">Explore More Cultures</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Cultures of Ivory Coast. Celebrating Cultural Diversity.</p>
+                <div class="footer-links">
+                    <a href="attributions.html">Resource Attributions</a>
+                    <a href="https://www.youtube.com/shorts/Au9y_sdzt-0" target="_blank">Project Video Demonstration</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // Display form data from URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const formDataDisplay = document.getElementById('formDataDisplay');
+        
+        if (urlParams.toString()) {
+            let html = '<div class="submitted-data"><h3>We have received your information:</h3><ul>';
+            
+            for (const [key, value] of urlParams) {
+                const decodedValue = decodeURIComponent(value);
+                const formattedKey = key.charAt(0).toUpperCase() + key.slice(1);
+                html += `<li><strong>${formattedKey}:</strong> ${decodedValue}</li>`;
+            }
+            
+            html += '</ul><p>We will contact you soon with more information about the cultural heritage of Ivory Coast.</p></div>';
+            formDataDisplay.innerHTML = html;
+        } else {
+            formDataDisplay.innerHTML = '<p>No form data was submitted. <a href="index.html#contact">Please try again</a>.</p>';
+        }
+    </script>
+</body>
+</html>

@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function fetchEvents() {
-    fetch('events.json')
+    fetch('data/events.json')
         .then(response => response.json())
         .then(data => {
             const container = document.querySelector('.events-grid');
