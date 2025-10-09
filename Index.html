@@ -3,79 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of KASSI Ayebié Amoin Ghislaine Mariana">
-    <meta name="author" content="KASSI Ayebié Amoin Ghislaine Mariana">
-    <title>KASSI Ayebié Amoin Ghislaine Mariana - Portfolio</title>
-    <link rel="stylesheet" href="styles/css">
+    <title>Mariana Kassi - Portfolio</title>
+    <link rel="stylesheet" href="styles/Styles.css">
 </head>
 <body>
-    <!-- Header -->
     <header>
-        <div class="profile">
-            <link rel="icon" href="https://www.flaticon.com/free-icon-font/hand-holding-seeding_7653247">
-
-            <img src="Image.jpg" alt="Profile Picture">
-            <h1>KASSI Ayebié Amoin Ghislaine Mariana</h1>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Ayebié Amoin G Mariana Kassi - Portofolio</div>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">Chamber Project</a></li>
+                        <li><a href="#">Final Project</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="directory.html">Chamber</a></li>
-                <li><a href="https://github.com/marianaKassi/wdd231">GitHub Profile</a></li>
-                <li><a href="https://www.linkedin.com/feed/">LinkedIn</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <!-- Main Content -->
-    <main>
-        <section id="course-work">
-            <h2>Course Work</h2>
-            <div class="card">
-                <ul>
-                    <li><a href="https://marianaKassi.github.io/wdd131/filtered-temples.html">How to add elements in HTML with Javascript</a>
-                    <li><a href="https://marianaKassi.github.io/wdd131/form.html">How to create a form</a>
-                    <li><a href="https://marianaKassi.github.io/wdd131/temples.html">Build a responsive</a>
-                </ul>
-            </div>
-        </section>
+    <main class="container main-content">
+        <div class="content-grid">
+            <section class="about-section">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="student-photo">
+                        <div class="photo-container">
+                            <img src="images/ph0.jpg" alt="Mariana Kassi" class="student-img">
+                            <div class="photo-label">Student Photo</div>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <p>My name is Mariana Kassi from Ivory Coast. I grew up in an environment rich in culture and tradition, which has shaped my personality and my passions. I'm passionate about community development, education and technology.</p>
+                        <p>I am actively involved in projects aimed at improving the lives of young people in my region. Apart from my social commitment, I love exploring the natural beauty of my country and sharing its wonders with others.</p>
+                        <p>Music and dance are also an integral part of my life, allowing me to celebrate our traditions and connect with people.</p>
+                    </div>
+                </div>
+            </section>
 
-        <section id="location">
-            <h2>Basilic, Yamoussoukro</h2>
-            <div class="card">
-                <img src="Basilic.YA,Edit.jpg" alt="Basilic">
-                <p>Basilic,Ivory Coast</p>
-            </div>
-        </section>
-
-        <section id="certificates">
-            <h2>Web and Computer Programming Certificate</h2>
-            <div class="filter-buttons">
-                <button data-filter="all">All</button>
-                <button data-filter="cse">CSE</button>
-                <button data-filter="wdd">WDD</button>
-            </div>
-            <div class="certificate-grid">
-                <div class="certificate cse">CSE 110</div>
-                <div class="certificate wdd">WDD 130</div>
-                <div class="certificate cse">CSE 111</div>
-                <div class="certificate cse">CSE 210</div>
-                <div class="certificate wdd">WDD 131</div>
-                <div class="certificate wdd">WDD 231</div>
-            </div>
-        </section>
+            <section class="courses-section">
+                <h2>Web Certificate Courses</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="cse">CSE</button>
+                    <button class="filter-btn" data-filter="wdd">WDD</button>
+                    <button class="filter-btn" data-filter="rel">REL</button>
+                    <button class="filter-btn" data-filter="itm">ITM</button>
+                    <button class="filter-btn" data-filter="math">MATH</button>
+                    <button class="filter-btn" data-filter="gs">GS</button>
+                </div>
+                <div class="courses-list" id="courses-list">
+                    <!-- Courses will be populated by JavaScript -->
+                </div>
+                <div class="total-credits">
+                    <p>Total Credits: <span id="total-credits">0</span></p>
+                </div>
+            </section>
+        </div>
     </main>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy;2025 ⭐KASSI Ayebié Amoin Ghislaine Mariana Ivory Coast</p>
+        
+              
+<nav class="socialmedia">
+<a href="https://github.com/marianaKassi/wdd231"><img src="images/Github.png" alt="GitHub" ></a>
+<a href="https://www.linkedin.com/feed/"><img src="images/linkedln.png" alt="LinkedIn" ></a>
+<a href="https://www.instagram.com/direct/inbox/"><img src="images/insta.jpeg" alt="Instagram" ></a>
+</nav>
+
+        <div class="container">
+            <p>&copy; 2025 Mariana KASSI · Ivory Coast</p>
+            <p class="last-modified">Last Modification: <span id="last-modified"></span></p>
         </div>
-        <p>Last Modified: <span id="last-modified"></span></p>
-
-
-        </span></p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
